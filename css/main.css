@@ -539,12 +539,18 @@ a {
 .about-us-card {
   min-height: 560px;
   margin-bottom: 20px;
+  align-items: center;
+    justify-content: center;
 }
 
 .about-us-card .about-us-image {
   -o-object-fit: cover;
-     object-fit: cover;
-}
+
+  width: 150px;  /* Adjust size as needed */
+  height: 150px; /* Ensure this is the same as width for a perfect circle */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; 
+  
 
 .about-us-card .supervisor {
   -o-object-position: 50% 25%;
